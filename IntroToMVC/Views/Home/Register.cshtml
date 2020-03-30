@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1 class="register">Register</h1>
+<form action="Result" method="post">
+    <p>Please select your gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <p>Which devices do you use?</p>
+    <input type="checkbox" name="smartphone">
+    <label for="smartphone"> Smartphone</label><br>
+    <input type="checkbox" name="desktop">
+    <label for="desktop"> Desktop Computer</label><br>
+    <input type="checkbox" name="laptop">
+    <label for="laptop"> Laptop</label><br><br>
+
+    <p>Username</p>
+    <input name="Username" type="text" required placeholder="Enter a username" />
+    <p>Email Address</p>
+    <input name="Email" type="email" required placeholder="Enter an email address" />
+    <p>Password</p>
+    <input name="Password" type="password" required placeholder="Enter a password" />
+
+
+
+    <input type="submit" />
+</form>
